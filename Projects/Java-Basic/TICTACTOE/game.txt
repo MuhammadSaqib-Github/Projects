@@ -1,0 +1,441 @@
+//Make Tic Tac Toe game, using only selection statements. Do not use loops. 
+
+package com.company;
+import java.util.*;
+public class task10
+{public static void main(String[] args)
+    {
+char one ='1',two='2',three='3',four='4',five='5',six='6',seven ='7',eight='8',nine='9';
+  Scanner input = new  Scanner(System.in);
+  System.out.println(" \n 1--> O \n 2--> X \n Enter Choice: " );
+            char c = input.next().charAt(0);
+            char choice = Character.toUpperCase(c);
+                char choice2 , choice1 = choice;
+                if (choice=='O' || choice =='X'){
+                    if ( choice1 =='O'){
+                        choice1 = choice;
+                        choice2 = 'X';}
+                    else{
+                        choice1 = choice;
+                        choice2 = 'O';}
+                    System.out.println(" User 1 picked " +choice1 );
+                    System.out.println(" User 2 picked " +choice2 );
+                }
+                else
+                    System.out.println("INVALID INPUT" );
+
+                System.out.println(one + "|" + two + "|" + three);
+                System.out.println(four + "|" + five + "|" + six);
+                System.out.println(seven + "|" + eight + "|" + nine);
+                System.out.println("USER 1 TURN:- ");
+                System.out.println("Enter your choice");
+                char user1Turn = input.next().charAt(0);
+
+                if (choice == 'X') {
+                    choice1 = 'X';
+                    choice2 = 'O';
+                }
+                else
+                {
+                    choice2 = 'X';
+                    choice1 = 'O';
+                }
+
+
+                if (user1Turn==one){
+                    one = choice1;
+                    System.out.println("Choice is " +choice);}
+                else if(user1Turn==two)
+                    two = choice1;
+                else if(user1Turn==three)
+                    three = choice1;
+                else if(user1Turn==four)
+                    four = choice1;
+                else if(user1Turn==five)
+                    five = choice1;
+                else if(user1Turn==six)
+                    six = choice1;
+                else if(user1Turn==seven)
+                    seven = choice1;
+                else if(user1Turn==eight)
+                    eight = choice1;
+                else if(user1Turn==nine)
+                    nine = choice1;
+                else
+                    System.out.println("INVALID INPUT");
+                System.out.println( one + "|" + two + "|" + three);
+                System.out.println(four + "|" + five + "|" + six);
+                System.out.println(seven + "|" + eight + "|" + nine);
+
+
+                System.out.println("USER 2 TURN:- " );
+                System.out.println("Enter your choice");
+                char user2Turn = input.next().charAt(0);
+                System.out.println("USER 1 IS" +user1Turn);
+                if (user2Turn==one){
+                    one = choice2;
+                    System.out.println("Choice is " +choice);}
+                else if(user2Turn==two)
+                    two = choice2;
+                else if(user2Turn==three)
+                    three = choice2;
+                else if(user2Turn==four)
+                    four = choice2;
+                else if(user2Turn==five)
+                    five = choice2;
+                else if(user2Turn==six)
+                    six = choice2;
+                else if(user2Turn==seven)
+                    seven = choice2;
+                else if(user2Turn==eight)
+                    eight = choice2;
+                else if(user2Turn==nine)
+                    nine = choice2;
+                else {
+                    System.out.println("INVALID INPUT");
+                }
+                System.out.println( one + "|" + two + "|" + three);
+                System.out.println(four + "|" + five + "|" + six);
+                System.out.println(seven + "|" + eight + "|" + nine);
+
+                System.out.println("USER 1 TURN:- ");
+                System.out.println("Enter your choice");
+                user1Turn = input.next().charAt(0);
+                if (user1Turn==one){
+                    one = choice1;
+                    System.out.println("Choice is " +choice);}
+                else if(user1Turn==two)
+                    two = choice1;
+                else if(user1Turn==three)
+                    three = choice1;
+                else if(user1Turn==four)
+                    four = choice1;
+                else if(user1Turn==five)
+                    five = choice1;
+                else if(user1Turn==six)
+                    six = choice1;
+                else if(user1Turn==seven)
+                    seven = choice1;
+                else if(user1Turn==eight)
+                    eight = choice1;
+                else if(user1Turn==nine)
+                    nine = choice1;
+                else
+                    System.out.println("INVALID INPUT");
+                System.out.println( one + "|" + two + "|" + three);
+                System.out.println(four + "|" + five + "|" + six);
+                System.out.println(seven + "|" + eight + "|" + nine);
+
+
+                System.out.println("USER 2 TURN:- " );
+                System.out.println("Enter your choice");
+                user2Turn = input.next().charAt(0);
+                if (user2Turn==one){
+                    one = choice2;
+                    System.out.println("Choice is " +choice);}
+                else if(user2Turn==two)
+                    two = choice2;
+                else if(user2Turn==three)
+                    three = choice2;
+                else if(user2Turn==four)
+                    four = choice2;
+                else if(user2Turn==five)
+                    five = choice2;
+                else if(user2Turn==six)
+                    six = choice2;
+                else if(user2Turn==seven)
+                    seven = choice2;
+                else if(user2Turn==eight)
+                    eight = choice2;
+                else if(user2Turn==nine)
+                    nine = choice2;
+                else {
+                    System.out.println("INVALID INPUT");
+                }
+                System.out.println( one + "|" + two + "|" + three);
+                System.out.println(four + "|" + five + "|" + six);
+                System.out.println(seven + "|" + eight + "|" + nine);
+
+                System.out.println("USER 1 TURN:- ");
+                System.out.println("Enter your choice");
+                user1Turn = input.next().charAt(0);
+                if (user1Turn==one){
+                    one = choice1;
+                    System.out.println("Choice is " +choice);}
+                else if(user1Turn==two)
+                    two = choice1;
+                else if(user1Turn==three)
+                    three = choice1;
+                else if(user1Turn==four)
+                    four = choice1;
+                else if(user1Turn==five)
+                    five = choice1;
+                else if(user1Turn==six)
+                    six = choice1;
+                else if(user1Turn==seven)
+                    seven = choice1;
+                else if(user1Turn==eight)
+                    eight = choice1;
+                else if(user1Turn==nine)
+                    nine = choice1;
+                else
+                    System.out.println("INVALID INPUT");
+                if (   (seven==eight && eight==nine ) || (three==six && six==nine))
+                {
+                    if (nine==choice1)
+                        System.out.println("USER 1 WON");
+                    else
+                        System.out.println("USER 2 WON");
+                }
+                else if ((one==two && two==three ) || (one==five && five==nine ) || (one==four && four==seven ) )
+                {
+                    if (one==choice1)
+                        System.out.println("USER 1 WON");
+                    else
+                        System.out.println("USER 2 WON");
+   System.out.println("GAME FINISHED :::: java programm has stopped!!!");
+                    System.exit(1);
+                }
+                else if (three==five && five==seven ) {
+                    if (five==choice1)
+                        System.out.println("USER 1 WON");
+                    else
+                        System.out.println("USER 2 WON");
+   System.out.println("GAME FINISHED :::: java programm has stopped!!!");
+                    System.exit(1);
+                }
+                else
+                    System.out.println();
+                System.out.println( one + "|" + two + "|" + three);
+                System.out.println(four + "|" + five + "|" + six);
+                System.out.println(seven + "|" + eight + "|" + nine);
+
+                System.out.println("USER 2 TURN:- " );
+                System.out.println("Enter your choice");
+                user2Turn = input.next().charAt(0);
+                if (user2Turn==one){
+                    one = choice2;
+                    System.out.println("Choice is " +choice);}
+                else if(user2Turn==two)
+                    two = choice2;
+                else if(user2Turn==three)
+                    three = choice2;
+                else if(user2Turn==four)
+                    four = choice2;
+                else if(user2Turn==five)
+                    five = choice2;
+                else if(user2Turn==six)
+                    six = choice2;
+                else if(user2Turn==seven)
+                    seven = choice2;
+                else if(user2Turn==eight)
+                    eight = choice2;
+                else if(user2Turn==nine)
+                    nine = choice2;
+                else {
+                    System.out.println("INVALID INPUT");
+                }
+                System.out.println( one + "|" + two + "|" + three);
+                System.out.println(four + "|" + five + "|" + six);
+                System.out.println(seven + "|" + eight + "|" + nine);
+                if (   (seven==eight && eight==nine ) || (three==six && six==nine))
+                {
+                    if (nine==choice1)
+                        System.out.println("USER 1 WON");
+                    else
+                        System.out.println("USER 2 WON");
+                    System.out.println("GAME FINISHED :::: java programm has stopped!!!");
+                    System.exit(1);
+                }
+                else if ((one==two && two==three ) || (one==five && five==nine ) || (one==four && four==seven ) )
+                {
+                    if (one==choice1)
+                        System.out.println("USER 1 WON");
+                    else
+                        System.out.println("USER 2 WON");
+                    System.out.println("GAME FINISHED :::: java programm has stopped!!!");
+                    System.exit(1);
+                }
+                else if (three==five && five==seven ) {
+                    if (five==choice1)
+                        System.out.println("USER 1 WON");
+                    else
+                        System.out.println("USER 2 WON");
+ System.out.println("GAME FINISHED :::: java programm has stopped!!!");
+                    System.exit(1);
+                }
+                else
+                    System.out.println();
+
+                System.out.println("USER 1 TURN:- ");
+                System.out.println("Enter your choice");
+                user1Turn = input.next().charAt(0);
+                if (user1Turn==one){
+                    one = choice1;
+                    System.out.println("Choice is " +choice);}
+                else if(user1Turn==two)
+                    two = choice1;
+                else if(user1Turn==three)
+                    three = choice1;
+                else if(user1Turn==four)
+                    four = choice1;
+                else if(user1Turn==five)
+                    five = choice1;
+                else if(user1Turn==six)
+                    six = choice1;
+                else if(user1Turn==seven)
+                    seven = choice1;
+                else if(user1Turn==eight)
+                    eight = choice1;
+                else if(user1Turn==nine)
+                    nine = choice1;
+                else
+                    System.out.println("INVALID INPUT");
+                System.out.println( one + "|" + two + "|" + three);
+                System.out.println(four + "|" + five + "|" + six);
+                System.out.println(seven + "|" + eight + "|" + nine);
+
+                if (   (seven==eight && eight==nine ) || (three==six && six==nine))
+                {
+                    if (nine==choice1)
+                        System.out.println("USER 1 WON");
+                    else
+                        System.out.println("USER 2 WON");
+ System.out.println("GAME FINISHED :::: java programm has stopped!!!");
+                    System.exit(1);
+                }
+                else if ((one==two && two==three ) || (one==five && five==nine ) || (one==four && four==seven ) )
+                {
+                    if (one==choice1)
+                        System.out.println("USER 1 WON");
+                    else
+                        System.out.println("USER 2 WON");
+  System.out.println("GAME FINISHED :::: java programm has stopped!!!");
+  System.exit(1);
+                }
+                else if (three==five && five==seven ) {
+                    if (five==choice1)
+                        System.out.println("USER 1 WON");
+                    else
+                        System.out.println("USER 2 WON");
+System.out.println("GAME FINISHED :::: java programm has stopped!!!");
+System.exit(1);
+                }
+                else
+                    System.out.println();
+
+                System.out.println("USER 2 TURN:- " );
+                System.out.println("Enter your choice");
+                user2Turn = input.next().charAt(0);
+                if (user2Turn==one){
+                    one = choice2;
+                    System.out.println("Choice is " +choice);}
+                else if(user2Turn==two)
+                    two = choice2;
+                else if(user2Turn==three)
+                    three = choice2;
+                else if(user2Turn==four)
+                    four = choice2;
+                else if(user2Turn==five)
+                    five = choice2;
+                else if(user2Turn==six)
+                    six = choice2;
+                else if(user2Turn==seven)
+                    seven = choice2;
+                else if(user2Turn==eight)
+                    eight = choice2;
+                else if(user2Turn==nine)
+                    nine = choice2;
+                else {
+                    System.out.println("INVALID INPUT");
+                }
+                System.out.println( one + "|" + two + "|" + three);
+                System.out.println(four + "|" + five + "|" + six);
+                System.out.println(seven + "|" + eight + "|" + nine);
+                if (   (seven==eight && eight==nine ) || (three==six && six==nine))
+                {
+                    if (nine==choice1)
+                        System.out.println("USER 1 WON");
+                    else
+                        System.out.println("USER 2 WON");
+
+  System.out.println("GAME FINISHED :::: java programm has stopped!!!");
+  System.exit(1);
+                }
+                else if ((one==two && two==three ) || (one==five && five==nine ) || (one==four && four==seven ) )
+                {
+                    if (one==choice1)
+                        System.out.println("USER 1 WON");
+                    else
+                        System.out.println("USER 2 WON");
+System.out.println("GAME FINISHED :::: java programm has stopped!!!");
+                    System.exit(1);
+                }
+                else if (three==five && five==seven ) {
+                    if (five==choice1)
+                        System.out.println("USER 1 WON");
+                    else
+                        System.out.println("USER 2 WON");
+System.out.println("GAME FINISHED :::: java programm has stopped!!!");
+System.exit(1);
+                }
+                else
+                    System.out.println();
+
+                System.out.println("USER 1 TURN:- ");
+                System.out.println("Enter your choice");
+                user1Turn = input.next().charAt(0);
+                if (user1Turn==one){
+                    one = choice1;
+                    System.out.println("Choice is " +choice);}
+                else if(user1Turn==two)
+                    two = choice1;
+                else if(user1Turn==three)
+                    three = choice1;
+                else if(user1Turn==four)
+                    four = choice1;
+                else if(user1Turn==five)
+                    five = choice1;
+                else if(user1Turn==six)
+                    six = choice1;
+                else if(user1Turn==seven)
+                    seven = choice1;
+                else if(user1Turn==eight)
+                    eight = choice1;
+                else if(user1Turn==nine)
+                    nine = choice1;
+                else
+                    System.out.println("INVALID INPUT");
+                System.out.println( one + "|" + two + "|" + three);
+                System.out.println(four + "|" + five + "|" + six);
+                System.out.println(seven + "|" + eight + "|" + nine);
+
+                if (   (seven==eight && eight==nine ) || (three==six && six==nine))
+                {
+                    if (nine==choice1)
+                        System.out.println("USER 1 WON");
+                    else
+                        System.out.println("USER 2 WON");
+   System.out.println("GAME FINISHED :::: java programm has stopped!!!");
+   System.exit(1);
+                }
+                else if ((one==two && two==three ) || (one==five && five==nine ) || (one==four && four==seven ) ) {
+                    if (one==choice1)
+                        System.out.println("USER 1 WON");
+                    else
+                        System.out.println("USER 2 WON");
+    System.out.println("GAME FINISHED :::: java programm has stopped!!!");
+    System.exit(1);
+                }
+                else if (three==five && five==seven) {
+                    if (five==choice1)
+                        System.out.println("USER 1 WON");
+                    else
+                        System.out.println("USER 2 WON");
+   System.out.println("GAME FINISHED :::: java programm has stopped!!!");
+   System.exit(1);
+                }
+                else
+                    System.out.println("DRAW");
+    }
+}
